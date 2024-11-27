@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media_Queries_Discription</title>
+    <style>
+      img {
+        width: 250px;
+        height: 150px;
+      }
+      #main {
+        border: 5px solid black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 20px;
+        justify-content: center;
+      }
+      #div1,
+      #div2,
+      #div3 {
+        border: 3px solid blue;
+        width: 320px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+      .n1,
+      .n2,
+      .n3 {
+        border: 3px solid rgb(230, 134, 150);
+      }
+      @media screen and (min-width: 0px) and (max-width: 425px) {
+        #div2,
+        #div3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        #div1,
+        #div3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 1000px) {
+        #div2,
+        #div1 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 0px) and (max-width: 425px) {
+        #main {
+          background-color: coral;
+        }
+      }
+      @media screen and (min-width: 426px) and (max-width: 768px) {
+        #main {
+          background-color: yellowgreen;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 1000px) {
+        #main {
+          background-color: hotpink;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        #main {
+          background-color: rgb(244, 193, 83);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div style="background-color: aquamarine" id="div1">
+        <div class="img1">
+          <img
+            src="https://images.pexels.com/photos/934011/pexels-photo-934011.jpeg?cs=srgb&dl=pexels-jessbaileydesign-934011.jpg&fm=jpg"
+            alt=""
+          />
+        </div>
+        <div class="n1"><h2>Flower</h2></div>
+        <div
+          style="
+            height: 80px;
+            overflow-y: scroll;
+            background-color: white;
+            scrollbar-width: none;
+          "
+          class="d1"
+        >
+          <p>
+            Flowers are the reproductive structures of flowering plants, also
+            known as angiosperms. They are vital to plant reproduction,
+            facilitating pollination and the production of seeds. A typical
+            flower consists of four main parts: sepals, petals, stamens (male
+            reproductive organs), and carpels (female reproductive organs).
+            Sepals protect the budding flower, while petals often attract
+            pollinators with their vibrant colors and fragrances. Stamens
+            produce pollen, and carpels contain ovules that develop into seeds
+            after fertilization. These parts work together to ensure the
+            survival and propagation of plant species.
+          </p>
+        </div>
+      </div>
+      <div style="background-color: aquamarine" id="div2">
+        <div class="img2">
+          <img
+            src="https://media.istockphoto.com/id/157373207/photo/balanced-stones-on-a-pebble-beach-during-sunset.jpg?s=612x612&w=0&k=20&c=V4Lua2fcDJmGiTb_JQu2EP6XmFLuAo7e3eI3cUXPNec="
+            alt=""
+          />
+        </div>
+        <div class="n2"><h2>Rock Pyramid</h2></div>
+        <div
+          style="
+            height: 80px;
+            overflow-y: scroll;
+            background-color: white;
+            scrollbar-width: none;
+          "
+          class="d2"
+        >
+          <p>
+            Rock pyramids, also known as cairns, are human-made stacks of
+            stones, often arranged in a conical or pyramid shape. These
+            structures have been used throughout history and across cultures for
+            various purposes, such as navigation markers, spiritual symbols, or
+            memorials. Built by carefully balancing stones of different sizes,
+            cairns range from simple piles to elaborate towers. In ancient
+            times, they were used to guide travelers in treacherous terrains,
+            especially in deserts or mountainous regions where landmarks were
+            scarce. Today, rock pyramids are also a popular symbol of balance,
+            patience, and harmony in nature.
+          </p>
+        </div>
+      </div>
+      <div style="background-color: aquamarine" id="div3">
+        <div class="img3">
+          <img
+            src="https://images.pexels.com/photos/1804035/pexels-photo-1804035.jpeg?cs=srgb&dl=pexels-sohelpatel-1804035.jpg&fm=jpg"
+            alt=""
+          />
+        </div>
+        <div class="n3"><h2>Water Glass</h2></div>
+        <div
+          style="
+            height: 80px;
+            overflow-y: scroll;
+            background-color: white;
+            scrollbar-width: none;
+          "
+          class="d3"
+        >
+          <p>
+            A water glass is a common vessel used for drinking water, typically
+            made of materials such as glass, plastic, or stainless steel. It
+            comes in various shapes and sizes, often designed for functionality
+            and aesthetic appeal. Clear glass versions are popular for their
+            simplicity and ability to showcase the clarity of water, while
+            insulated or double-walled designs are favored for keeping water
+            cool for extended periods. The water glass is a staple in homes,
+            restaurants, and workplaces, reflecting the universal need for
+            hydration and the importance of clean drinking water.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
